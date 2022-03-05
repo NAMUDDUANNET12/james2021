@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  
+    <link rel="stylesheet" href="./fist.css">
+ <title>MENU</title>
+
+<body>
+    
+ 
+<div class="pics" style="width:100%">
+  
+    <img class="mySlides" src="pizza.jpeg" style="width:100%">
+    <img class="mySlides" src="bkground.jpg" style="width:100%">
+    <img class="mySlides" src="snail.jpg" style="width:100%">
+  </div>
+  <div class="main">
+
+  <div class="navi">
+    <a href="GAK home.html">HOME</a> 
+    <a href="menu.html" >MENU</a>
+    <a href="login.html">LOGIN</a>
+    <a href="about.html" >ABOUT</a>
+    <a href="contact.html" >CONTACT</a> 
+    <a href="faq.html" >FAQ</a>
+</div>
+
+
+
+  
+
+<h2  >GAK MENU</h2>
+
+<table>
+  <tr>
+    <th>ITEM</th>
+    <th>COST</th>
+    
+  </tr>
+  <tr>
+    <td> ITALIAN PIZZA</td>
+    <td>shs.10000</td>
+     
+  </tr>
+  <tr>
+    <td>GERMAN PIZZA</td>
+    <td>shs.15000</td>
+    
+  </tr>
+  <tr>
+    <td> GAK DOUGHNUT</td>
+    <td>shs.2300</td>
+     
+  </tr>
+  <tr>
+    <td> RICE PIE</td>
+    <td> shs.6300</td>
+     
+  </tr>
+  <tr>
+    <td> GAK CAKE </td>
+    <td>shs.22000</td>
+    
+  </tr>
+  <tr>
+    <td> BURGER</td>
+    <td>shs.5900</td>
+      </tr>
+</table>
+
+
+</div>
+
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+  }
+  </script>
+</body>
+</html>
